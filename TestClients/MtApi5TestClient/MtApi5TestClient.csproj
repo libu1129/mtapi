@@ -138,6 +138,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MtApi5.Model\MtApi5.Model.csproj">
+      <Project>{195863c9-a6a4-431e-a1e8-b56d295d6f7e}</Project>
+      <Name>MtApi5.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\MtApi5\MtApi5.csproj">
       <Project>{AC8B5010-DA75-477E-9CA5-547C649E12D8}</Project>
       <Name>MtApi5</Name>

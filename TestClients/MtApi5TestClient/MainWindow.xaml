@@ -1,7 +1,8 @@
 ﻿<Window x:Class="MtApi5TestClient.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mtapi5="clr-namespace:MtApi5;assembly=MtApi5"
+        
+        xmlns:mtapi5="clr-namespace:MtApi5;assembly=MtApi5.Model"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:mtApi5TestClient="clr-namespace:MtApi5TestClient"
         Title="MainWindow" Height="700" Width="900"

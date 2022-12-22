@@ -14,7 +14,7 @@
             Ask = ask;
         }
 
-        internal MtQuote(MTApiService.MtQuote quote)
+        public MtQuote(MTApiService.MtQuote quote)
         {
             Instrument = quote.Instrument;
             Bid = quote.Bid;

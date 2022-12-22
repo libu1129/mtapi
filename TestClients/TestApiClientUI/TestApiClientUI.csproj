@@ -153,6 +153,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MtApi.Model\MtApi.Model.csproj">
+      <Project>{0498c69e-0372-4bb5-bbe7-2044c11ed05b}</Project>
+      <Name>MtApi.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\MtApi\MtApi.csproj">
       <Project>{7a76c388-a8fb-4949-8170-24d4742e934e}</Project>
       <Name>MtApi</Name>

@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace MtApi5
 {
-    internal static class MtConverters
+    public static class MtConverters
     {
         private static readonly MtLog Log = LogConfigurator.GetLogger(typeof(MtConverters));
 

@@ -57,78 +57,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChartEventArgs.cs" />
-    <Compile Include="ChartPeriod.cs" />
-    <Compile Include="Events\OnLockTicksEvent.cs" />
-    <Compile Include="FlagFontStyle.cs" />
     <Compile Include="Monitors\AvailabilityOrdersEventArgs.cs" />
+    <Compile Include="Monitors\MtMonitorBase.cs" />
     <Compile Include="Monitors\OrderModification\ModifiedOrdersEventArgs.cs" />
     <Compile Include="Monitors\OrderModification\ModifiedOrdersMonitor.cs" />
     <Compile Include="Monitors\OrderModification\MtModifiedOrder.cs" />
-    <Compile Include="Monitors\MtMonitorBase.cs" />
     <Compile Include="Monitors\OrderModification\OrderModifiedTypes.cs" />
+    <Compile Include="Monitors\TimeframeTradeMonitor.cs" />
+    <Compile Include="Monitors\TimerTradeMonitor.cs" />
+    <Compile Include="Monitors\TradeMonitor.cs" />
     <Compile Include="Monitors\Triggers\IMonitorTrigger.cs" />
     <Compile Include="Monitors\Triggers\NewBarTrigger.cs" />
     <Compile Include="Monitors\Triggers\TimeElapsedTrigger.cs" />
-    <Compile Include="MqlRates.cs" />
-    <Compile Include="MqlTick.cs" />
-    <Compile Include="Events\MtChartEvent.cs" />
-    <Compile Include="MtConnectionEventArgs.cs" />
-    <Compile Include="MtConnectionException.cs" />
-    <Compile Include="MtConnectionState.cs" />
-    <Compile Include="MtCommandType.cs" />
-    <Compile Include="MtErrorCode.cs" />
-    <Compile Include="Events\MtEventTypes.cs" />
-    <Compile Include="MtExecutionException.cs" />
-    <Compile Include="MtLockTicksEventArgs.cs" />
-    <Compile Include="MtOrder.cs" />
+    <Compile Include="MtApiClient.cs" />
     <Compile Include="MtQuote.cs" />
     <Compile Include="MtQuoteEventArgs.cs" />
-    <Compile Include="MtSession.cs" />
-    <Compile Include="MtTimeBar.cs" />
-    <Compile Include="MtTypes.cs" />
-    <Compile Include="Monitors\TradeMonitor.cs" />
-    <Compile Include="PriceConstantsType.cs" />
-    <Compile Include="MarketInfoModeType.cs" />
-    <Compile Include="MtApiClient.cs" />
-    <Compile Include="MtApiColorConverter.cs" />
-    <Compile Include="OrderSelectMode.cs" />
-    <Compile Include="OrderSelectSource.cs" />
-    <Compile Include="Requests\CopyRatesRequest.cs" />
-    <Compile Include="Requests\GetOrderRequest.cs" />
-    <Compile Include="Requests\GetOrdersRequest.cs" />
-    <Compile Include="Requests\ICustomRequest.cs" />
-    <Compile Include="Requests\OrderCloseByRequest.cs" />
-    <Compile Include="Requests\OrderCloseRequest.cs" />
-    <Compile Include="Requests\OrderDeleteRequest.cs" />
-    <Compile Include="Requests\OrderModifyRequest.cs" />
-    <Compile Include="Requests\OrderSendRequest.cs" />
-    <Compile Include="Requests\SeriesInfoIntegerRequest.cs" />
-    <Compile Include="Requests\SessionRequest.cs" />
-    <Compile Include="Requests\RequestBase.cs" />
-    <Compile Include="Requests\RequestType.cs" />
-    <Compile Include="Requests\SymbolInfoDoubleRequest.cs" />
-    <Compile Include="Requests\SymbolInfoTickRequest.cs" />
-    <Compile Include="Responses\CopyRatesResponse.cs" />
-    <Compile Include="Responses\GetOrderResponse.cs" />
-    <Compile Include="Responses\GetOrdersResponse.cs" />
-    <Compile Include="Responses\ICustomResponse.cs" />
-    <Compile Include="Responses\OrderSendResponse.cs" />
-    <Compile Include="Responses\SeriesInfoIntegerResponse.cs" />
-    <Compile Include="Responses\SessionResponse.cs" />
-    <Compile Include="Responses\ResponseBase.cs" />
-    <Compile Include="Responses\SymbolInfoDoubleResponse.cs" />
-    <Compile Include="Responses\SymbolInfoTickResponse.cs" />
-    <Compile Include="SeriesIdentifier.cs" />
-    <Compile Include="TimeBarArgs.cs" />
-    <Compile Include="Monitors\TimeframeTradeMonitor.cs" />
-    <Compile Include="Monitors\TimerTradeMonitor.cs" />
-    <Compile Include="TradeOperation.cs" />
-    <Compile Include="MtApiTimeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MtApi.Data\MtApi.Model.csproj">
+    <ProjectReference Include="..\MtApi.Model\MtApi.Model.csproj">
       <Project>{0498c69e-0372-4bb5-bbe7-2044c11ed05b}</Project>
       <Name>MtApi.Model</Name>
     </ProjectReference>
@@ -138,6 +85,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Monitors\readme.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

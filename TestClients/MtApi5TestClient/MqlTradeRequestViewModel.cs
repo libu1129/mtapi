@@ -10,7 +10,7 @@ namespace MtApi5TestClient
         {
             if (reqest == null)
                 throw new ArgumentNullException();
-
+            
             TradeRequest = reqest;
         }
 
