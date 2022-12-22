@@ -59,20 +59,6 @@
   <ItemGroup>
     <Compile Include="ChartEventArgs.cs" />
     <Compile Include="ChartPeriod.cs" />
-    <Compile Include="EnumAlignMode.cs" />
-    <Compile Include="EnumChartPropertyDouble.cs" />
-    <Compile Include="EnumChartPropertyInteger.cs" />
-    <Compile Include="EnumChartPropertyString.cs" />
-    <Compile Include="EnumColorFormat.cs" />
-    <Compile Include="EnumObject.cs" />
-    <Compile Include="EnumObjectPropertyDouble.cs" />
-    <Compile Include="EnumObjectPropertyInteger.cs" />
-    <Compile Include="EnumObjectPropertyString.cs" />
-    <Compile Include="EnumSeriesInfoInteger.cs" />
-    <Compile Include="EnumSymbolInfoDouble.cs" />
-    <Compile Include="EnumSymbolInfoInteger.cs" />
-    <Compile Include="EnumTerminalInfoDouble.cs" />
-    <Compile Include="EnumTerminalInfoInteger.cs" />
     <Compile Include="Events\OnLockTicksEvent.cs" />
     <Compile Include="FlagFontStyle.cs" />
     <Compile Include="Monitors\AvailabilityOrdersEventArgs.cs" />
@@ -142,6 +128,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MtApi.Data\MtApi.Model.csproj">
+      <Project>{0498c69e-0372-4bb5-bbe7-2044c11ed05b}</Project>
+      <Name>MtApi.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MTApiService\MTApiService.csproj">
       <Project>{DE76D5C7-B99C-4467-8408-78173BDD84E0}</Project>
       <Name>MTApiService</Name>
